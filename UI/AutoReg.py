@@ -22,7 +22,7 @@ workbook_changes = {}
 exit_event = threading.Event()
 stop_event = threading.Event()
 
-client_options = ClientOptions(api_key='3ae342c3f7b824c499ebc0a5449e55c5')
+client_options = ClientOptions(api_key='***')
 cap_monster_client = CapMonsterClient(options=client_options)
 recaptcha2request = RecaptchaV2ProxylessRequest(websiteUrl = "https://user.gto.ru/user/register", websiteKey = "6Lc7HbQUAAAAANiqU4LIcZYoVvLb72OdoU-mX5P5")
 
