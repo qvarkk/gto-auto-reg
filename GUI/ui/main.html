@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="/eel.js"></script>
+  <script type="text/javascript" src="./main.js" defer></script>
+  <link rel="stylesheet" href="main.css">
+  <title>Main</title>
+</head>
+<body>
+  <header class="header">
+    <a href="" class="start-link" id="startAnchor">Запуск</a>
+    <a href="" class="settings-link" id="settingsAnchor">Настройки</a>
+  </header>
+
+  <main class="main">
+    <section class="start-section display-none">
+      <div class="before-start">
+        <div class="start-settings-grid">
+          <p class="settings-text">Начальный ряд</p>
+          <input class="settings-input" type="number" placeholder="1">
+          <p class="settings-text">Конечный ряд</p>
+          <input class="settings-input" type="number" placeholder="20">
+          <p class="settings-text">Количество окон</p>
+          <input class="settings-input" type="number" placeholder="2">
+          <p class="settings-text">Локация</p>
+          <select class="settings-select" id="locationDropdown"></select>
+        </div>
+        
+        <button class="start-button" id="startRegisterBtn">Запуск</button>
+      </div>
+
+      <div class="after-start display-none">
+        <div class="work-stat-grid">
+          <p class="settings-text">Обработано рядов</p>
+          <input class="settings-input" disabled type="number" placeholder="...">
+          <p class="settings-text">Осталось рядов</p>
+          <input class="settings-input" disabled type="number" placeholder="...">
+        </div>
+        <button class="end-button" id="endRegisterBtn">Остановить</button>
+      </div>
+    </section>
+
+
+    <section class="settings-section">
+      <div class="settings-grid">
+        <p class="settings-text">Путь к Excel таблице</p>
+        <input class="settings-path-input" type="text" disabled placeholder="Укажите путь...">
+        <button class="browse-button" id="browseExcelBtn">Указать</button>
+        <p class="settings-text">Путь к chromedriver</p>
+        <input class="settings-path-input" type="text" disabled placeholder="Укажите путь...">
+        <button class="browse-button" id="browseDriveBtn">Указать</button>
+        <p class="settings-text">Путь к локациям</p>
+        <input class="settings-path-input" type="text" disabled placeholder="Укажите путь...">
+        <button class="browse-button" id="browseLocBtn">Указать</button>
+      </div>
+      <button class="save-button" id="saveSettingsBtn">Сохранить</button>
+    </section>
+  </main>
+
+  <!-- <select name="" id="locationDropdown"></select> -->
+</body>
+</html>
